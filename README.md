@@ -35,8 +35,7 @@ This is a task management project developed using Node.js, Express js, MongoDB. 
    ```bash
    npm i express,hbs,mongoose
    ```
-
-
+4.  Change the MongoDB Connection String :
 
 
 ## Usage
