@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="/css/homepage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Management</h1>
+  <form id="taskForm" action="/addTask" method="post">
+      <!-- Task Title -->
+      <label for="title">Task Title</label>
+      <input 
+        type="text" 
+        id="title" 
+        name="taskTitle" 
+        placeholder="Enter task title" required>
+      
+      <!-- Task Description -->
+      <label for="description">Task Description</label>
+      <input 
+        id="description"
+        type="text" 
+        name="taskDescription" 
+        rows="4" 
+        placeholder="Enter task description" required>
+      
+      <!-- Submit Button -->
+      <button type="submit">Add Task</button>
+    </form>
+    <a href="http://127.0.0.1:3000/viewTasks"><label>View Tasks</label></a>
+    </body>
+</html>

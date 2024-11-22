@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eafaf1; /* Light green background */
+    color: #2f6a4d; /* Dark green text */
+    padding: 20px;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff; /* White container background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #3c8d3e; /* Green heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Task List Styling */
+  .task-list {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5fff7; /* Very light green for task item */
+    border: 1px solid #3c8d3e; /* Green border */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .task-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2f6a4d;
+    margin-bottom: 5px;
+  }
+  
+  .task-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Buttons Styling */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complete-btn {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .complete-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red background for delete */
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  

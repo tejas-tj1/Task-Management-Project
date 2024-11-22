@@ -1,0 +1,212 @@
+/* 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f8fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .task-info {
+      flex: 1;
+    }
+
+    .task-title {
+      font-weight: bold;
+      margin: 0 0 5px;
+    }
+
+    .task-description {
+      margin: 0;
+      color: #666;
+    }
+
+    .task-actions button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .complete-btn {
+      background-color: #28a745;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .complete-btn:hover {
+      background-color: #218838;
+    }
+
+    .delete-btn {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .delete-btn:hover {
+      background-color: #c82333;
+    }
+   */
+
+
+
+
+   /* ----------------------------------------- */
+   /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9f7e1; /* Light green-gray background */
+  color: #333; /* Standard dark text color */
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff; /* White container */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #3c8d3e; /* Green for header */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Task List Styling */
+.task-list {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task-info {
+  flex: 1;
+  text-align: left;
+}
+
+.task-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2f6a4d;
+  margin-bottom: 5px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888; /* Gray for completed tasks */
+}
+
+.task-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-btn {
+  background-color: #4caf50; /* Green for "Mark as Completed" */
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.complete-btn:disabled {
+  background-color: #d4edda; /* Light green for disabled */
+  color: #6c757d; /* Gray text */
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red for "Delete" */
+  color: white;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.edit-btn {
+  background-color: #ffc107; /* Yellow for "Edit" */
+  color: #333;
+  margin-left: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    margin-top: 10px;
+  }
+}

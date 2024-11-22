@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="/css/viewTask.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task List</h1>
+    <ul class="task-list">
+      <!-- Example Task Item -->
+       {{#each taskData}}
+  <div class="task-info">
+    <p class="task-title {{#if completed}}completed{{/if}}">{{title}}</p>
+    <p class="task-description">{{description}}</p>
+  </div>
+    <li class="task-item">
+  <div class="task-actions">
+    {{#if completed}}
+      <button class="complete-btn" disabled>Completed</button>
+    {{else}}
+      <form action="/tasks/mark-completed/{{_id}}" method="POST" style="display: inline;">
+        <button class="complete-btn" type="submit">Mark as Completed</button>
+      </form>
+    {{/if}}
+    <form action="/tasks/delete/{{_id}}" method="POST" style="display: inline;">
+      <button class="delete-btn" type="submit">Delete Task</button>
+    </form>
+    <form action="/tasks/edit/{{_id}}" method="GET" style="display: inline;">
+      <button class="edit-btn">Edit Task</button>
+    </form>
+  </div>
+</li>
+{{/each}}
+      
+    </ul>
+  </div>
+</body>
+</html>
